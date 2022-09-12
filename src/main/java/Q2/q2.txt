@@ -1,0 +1,30 @@
+Q2/- Explain the difference between JPA and Hibernate, and
+What are the advantages of using Hibernate over JDBC?
+A2. 
+
+**difference between JPA and Hibernate**
+
+-> JPA is specification given by java people to build ORM software.
+ -> At a time of building ORM software devloper have to use JPA api.
+-> While Hibernate is one of the famous implementation of JPA. Hibernate have their own api too.
+-> that means in hibernate besides jpa methods their own methods and classes is also there.
+-> hibernate is ORM framework software.
+-> JPA belongs to javax.persistence and Hibernate belong to org.hibernate package.
+
+**advantages of using Hibernate over JDBC**
+
+->The first and major advantage is in JDBC we can't store java objects directly to database.we have
+   convert object into atmoic value to store in database table.
+
+->JDBC depend on database software because we write query which depend on database software 
+while in hibernate we write query in JPQL language which depend on Class name and variable
+name.so it make hibernate database software independent.
+
+->In JDBC too much repetation of some code like a big boiler plate code but in hibernate this problem 
+is solved. 
+
+->In JDBC there are so many checked exceptions is there we have to take care all the checked 
+exception.
+
+->In JDBC we get ResultSet to store our database data.but this resultset we are not able transfer our
+data from one layer to another layer.(total 3 layer is there)
